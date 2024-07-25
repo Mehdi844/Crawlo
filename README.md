@@ -1,4 +1,4 @@
-# Crawlov2 Application
+# Crawlo Application
 
 ## Description
 Crawlo est une application de gestion d'accès qui permet d'associer des utilisateurs à des comptes et de gérer leurs accès. L'application offre des fonctionnalités telles que la gestion des utilisateurs, des comptes et des accès, ainsi que l'authentification des administrateurs.
@@ -26,4 +26,4 @@ Crawlo est une application de gestion d'accès qui permet d'associer des utilisa
 1. **Cloner le dépôt**
    ```bash
    git clone <URL_DU_DEPOT>
-   cd crawlov2
+   cd crawlo
