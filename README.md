@@ -21,9 +21,33 @@ Crawlo est une application de gestion d'accès qui permet d'associer des utilisa
 - MySQL
 - Un IDE comme IntelliJ IDEA ou Eclipse
 
+
 ## Installation
 
 1. **Cloner le dépôt**
    ```bash
-   git clone <URL_DU_DEPOT>
+   git clone https://github.com/Mehdi844/Crawlo/tree/ff1ad0fa385488d7bdb1e0d34ef8b1e28bb3a7d8/crawlov2
    cd crawlo
+
+2. **Configurer la base de données**
+   ```bash
+   spring.datasource.url=jdbc:mysql://localhost:3306/crawlo
+   spring.datasource.username=root
+   spring.datasource.password=*****
+   spring.jpa.hibernate.ddl-auto=update
+   spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+   server.port=8080
+3. **Compiler et exécuter l'application**
+   ```bash
+   mvn clean install
+   mvn spring-boot:run
+
+## Authentification des administrateurs
+
+L'application utilise Spring Security pour l'authentification des administrateurs. Ajoutez manuellement des administrateurs dans la table Admin avec des mots de passe hachés.
+
+
+### Instructions supplémentaires
+- **URL du dépôt**:  `https://github.com/Mehdi844/Crawlo/tree/ff1ad0fa385488d7bdb1e0d34ef8b1e28bb3a7d8/crawlov2`
+
+
